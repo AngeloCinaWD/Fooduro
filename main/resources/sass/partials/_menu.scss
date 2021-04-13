@@ -1,0 +1,168 @@
+.jumboTron {
+ height: 40vh;
+ position: relative;
+}
+
+.jumboTron img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#restaurant-name {
+  background-color: rgba(30, 36, 68, 0.616);
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 0 8px;
+  span {
+    color: white;
+  }
+}
+
+.cardRadius {
+  border-radius: 1.5rem;
+}
+
+.fixHeight {
+  height: 250px;
+}
+
+.roundColor {
+  border: 1px solid $yellow;
+  color: #fffff0;
+  border-radius: 50%;
+  background-color: $yellow;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.itemFlex {
+  display: flex;
+}
+
+.justifySpace {
+  justify-content: space-between;
+}
+
+.itemName {
+  text-align: center;
+  color: $pink;
+}
+
+.cartAlign {
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemName::first-letter, .itemDescription::first-letter{
+  text-transform: uppercase;
+}
+
+#menu-name {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.darkBlue {
+  color: $darkblue;
+}
+
+.imgDel {
+  width: 25px;
+}
+
+.imgDel img {
+  width: 100%;
+  height: auto;
+}
+
+.cartDel {
+  font-size: 10px;
+}
+
+p.cartDel {
+  margin-bottom: 0;
+}
+
+#notAvailable {
+  font-size: 11px;
+  color: red;
+}
+
+.itemHover:hover {
+  transform: scale(1.1);
+  transition: all 0.9s ease 0s;
+}
+
+.cartInfo {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.cartInfo div.darkBlue {
+  margin: 0px 10px;
+}
+
+#pagamento {
+  background-color: $pink;
+  color: white;
+  border-radius: 20px;
+  border-color: $pink;
+}
+
+#carTxs {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  #carTxs {
+    display: block;
+  }
+
+  #cartLat {
+    display: none;
+  }
+}
+
+@media screen and (min-width:460px) and (max-width:789px) {
+  #restaurant-name {
+    font-size: 1.7rem;
+    min-width: 65%;
+}
+
+  #menu-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:460px) {
+  #restaurant-name {
+    font-size: 1.8rem;
+    min-width: 65%;
+}
+
+  #menu-name {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width:790px) and (max-width:1199px) {
+  #restaurant-name {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  #menu-name {
+    font-size: 2rem;
+  }
+}

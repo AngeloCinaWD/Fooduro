@@ -1,0 +1,22 @@
+header {
+    height: 8vh;
+}
+
+.btn-header {
+    background-color: $pink;
+    margin: 0 4px;
+}
+
+.nav-link {
+    color: $pink !important;
+}
+
+.btn-nav:hover {
+    color: $pink !important;
+    background-color: white !important;
+}
+
+.btn-nav {
+    text-transform: capitalize;
+    color: white !important;
+}
